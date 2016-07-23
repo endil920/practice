@@ -1,6 +1,6 @@
 #import <stdio.h>
 
-void setBit(int array[], int index)
+void setBit(int *array, int index)
 {
    int arrIndex = index / 32; 
    int bitIndex = index % 32;
@@ -11,20 +11,22 @@ void setBit(int array[], int index)
    printf("arr is now %d\n", array[arrIndex]);
 }
 
-int getBit(int array[], int index)
+int getBit(int *array, int index)
 {
    int arrIndex = index / 32; 
    int bitIndex = index % 32;
    return (array[arrIndex] >> bitIndex) & 1;
 }
 
-int main()
+int main(int argc, char *argv[])
 {
    int vec[3];
    vec[0] = 0;
    vec[1] = 0;
    vec[2] = 0;
+   int position;
+   sscanf(argv[1], "%d", &position);
    //set the first bit
-   setBit(vec, 45);
-   printf("the value is now %d\n", getBit(vec, 45));
+   setBit(vec, position);
+   printf("the value is now %d\n", getBit(vec, position));
 }
