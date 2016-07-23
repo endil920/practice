@@ -1,4 +1,7 @@
 #import <stdio.h>
+/*
+ * implementation of a bitvector for programming pearls problem 1.2
+ */
 
 void setBit(int *array, int index)
 {

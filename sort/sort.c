@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+/*
+ * sorts a text file with numbers in it called 'nums.txt'
+ */
 
 int cmpfunc(const void *a, const void *b)
 {

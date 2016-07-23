@@ -1,4 +1,7 @@
 #include <stdio.h>
+/*
+ * prints the binary form of a number
+ */
 
 int main(int argc, char *argv[])
 {
