@@ -22,7 +22,7 @@ int main(void)
     int j = 0;
     while(j < i)
     {
-        printf("hello hollicane %d\n", numo[j++]);
+        printf("%d\n", numo[j++]);
     }
 
     fclose(f);
