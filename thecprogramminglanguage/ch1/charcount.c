@@ -7,7 +7,7 @@ int main()
     {
         ++nc;
     }        
-    printf("%ld\n", nc);
+    printf("\n%ld\n", nc);
 }
 
 
