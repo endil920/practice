@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+float convert(float farTemp)
+{
+    return 5.0 * (farTemp - 32) / 9;
+}
+
 int main()
 {
     float farh, cel;
@@ -9,8 +14,10 @@ int main()
     farh = lower;
     while (farh <= upper)
     {
-        cel = 5 * (farh - 32) / 9;
+        cel = convert(farh);
         printf("%9.1f\t%6.1f\n",farh, cel);
         farh += step;
     }
 }
+
+
